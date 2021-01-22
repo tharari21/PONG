@@ -69,4 +69,25 @@ class Ball {
 }
 
 
-const pad = new Paddle(30,100,'blue');
+const paddle = new Paddle(30,100,'blue');
+
+
+document.onkeypress = (e) => {
+    console.log(e.code)
+    // arrow left	37
+    if (e.code === 37) {
+        
+    }
+    // arrow up	38
+    else if (e.code === 38) {
+        paddle.move(-10)
+    }
+    // arrow right	39
+    else if (e.code === 39) {
+                
+    }
+    // arrow down	40
+    else if (e.code === 40) {
+        paddle.move(10)
+    }
+};
